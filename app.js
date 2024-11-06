@@ -24,7 +24,7 @@ const insertProduct = async (descricao, preco, estoque, Adata) => {
 
 const getProducts = async () => {
     try {
-      const products = await db.any('SELECT * FROM Produto')
+      const products = await db.any('SELECT * FROM Produto Order By id')
       return products
     } catch (error) {
         console.log(error)
