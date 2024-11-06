@@ -1,0 +1,6 @@
+INSERT INTO produto (DESCRICAO, PRECO, ESTOQUE, DATA) VALUES
+('Caixa', 15.00, 2000, '2024-01-01'),
+('Pc Gamer', 3500.00, 10,'2024-01-01'),
+('Macbook', 7000.00, 10,'2024-01-01'),
+('Fone', 78.00, 1000,'2024-01-01'),
+('Iphone', 5000.00, 750,'2024-01-01');
