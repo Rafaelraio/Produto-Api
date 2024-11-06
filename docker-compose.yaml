@@ -7,11 +7,12 @@ services:
     restart: always
     environment:
       POSTGRES_DB: product-api      
-      POSTGRES_USER: postgres        
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: root        
     ports:
       - "5436:5432"               
     volumes:
-      - postgres_data:/var/lib/postgresql/data
+      - ./scripts:/docker-entrypoint-initdb.d
 
 volumes:
   postgres_data:

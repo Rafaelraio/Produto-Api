@@ -69,6 +69,10 @@ const getProducts = async () => {
 
 app.post('/produto', async (req, res) => {
   const { descricao, preco, estoque, data } = req.body
+  console.log("inicio");
+  console.log(descricao);
+  console.log("fim");
+
   try {
     const novoProduto = await insertProduct(descricao, preco, estoque, data)
     res.status(201).json({
